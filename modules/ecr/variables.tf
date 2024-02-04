@@ -9,3 +9,22 @@ variable "ecr_image_tag" {
   description = "Image tag for the Lambda function"
   default     = "latest"
 }
+
+variable "openid_connect_provider_arn" {
+  type        = string
+  description = "The ARN of the OIDC Identity Provider to associate with the cluster"
+}
+
+variable "organization" {
+  type        = string
+  description = "The name of the organization"
+  default     = "sharockys"
+}
+
+variable "name" {
+  type        = string
+  description = "The name of the repository"
+  default     = "whisper-app"
+
+}
+
